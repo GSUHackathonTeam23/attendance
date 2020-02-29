@@ -8,15 +8,23 @@ block content
       // Content Header (Page header)
       .content-header
         .container-fluid
-          .row.mb-2
-            .col-sm-6
+          .row
+            .col-md-12
+              .card
+                .card-body
+                  .box
+                    .box-header
+
               h1.m-0.text-dark Attendance Overview
             // /.col
             .col-sm-6
+
               ol.breadcrumb.float-sm-right
                 li.breadcrumb-item
                   a(href='#') Home
                 li.breadcrumb-item.active Attendance Overview
+                  .card-header
+                    .card-body
             // /.col
           // /.row
         // /.container-fluid

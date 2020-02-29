@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  .wrapper
+    include ./partials/sidebar
+    // Content Wrapper. Contains page content
+    .content-wrapper
+      // Content Header (Page header)
+      .content-header
+        .container-fluid
+          .row.mb-2
+            .col-sm-6
+              h1.m-0.text-dark Student Grades
+            // /.col
+            .col-sm-6
+              ol.breadcrumb.float-sm-right
+                li.breadcrumb-item
+                  a(href='#') Home
+                li.breadcrumb-item.active Student Grades
+            // /.col
+          // /.row
+        // /.container-fluid
+      // /.content-header
+      // Main content
+      section.content
+        .container-fluid
+
+
+
+
+    // /.content-wrapper
+    footer.main-footer
+      strong
+        | Copyright &copy; 2020
+        a(href='#') Southern Hacks Team 23
+        | .
+      |     All rights reserved.
+      //.float-right.d-none.d-sm-inline-block
+      //  b Version
+      //  |  3.0.2
+    // Control Sidebar
+    aside.control-sidebar.control-sidebar-dark
+      // Control sidebar content goes here
+    // /.control-sidebar
+  // ./wrapper

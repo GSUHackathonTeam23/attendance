@@ -11,4 +11,9 @@ router.get('/classview', function(req, res, next) {
   res.render('classview', { title: 'Class View' });
 });
 
+/* GET classview page. */
+router.get('/grades', function(req, res, next) {
+  res.render('grades', { title: 'Student Grades' });
+});
+
 module.exports = router;

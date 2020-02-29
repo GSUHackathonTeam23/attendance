@@ -22,4 +22,9 @@ router.get('/attendance', function(req, res, next) {
   res.render('attendance', { title: 'Attendance Calendar' });
 });
 
+/* GET login page. */
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Attendance Calendar' });
+});
+
 module.exports = router;

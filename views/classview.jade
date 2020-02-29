@@ -55,7 +55,20 @@ block content
                                 td.sorting_1  Doe
                                 td  John
                                 td 22920
-                                td Yes
+                                //button for status
+                                td
+                                  button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                                    | Action
+                                    span.fa.fa-caret-down
+                                  ul.dropdown-menu
+                                    li
+                                      a(href='#') Present
+                                    li
+                                      a(href='#') Absent
+                                    li
+                                      a(href='#') Tardy
+
+
                                 td
                                 td Yes
                               tr.even(role='row')

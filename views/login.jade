@@ -1,0 +1,76 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title AttendanceApp
+  // Tell the browser to be responsive to screen width
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Font Awesome
+  link(rel='stylesheet' href='/plugins/fontawesome-free/css/all.min.css')
+  // Ionicons
+  link(rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+  // Tempusdominus Bbootstrap 4
+  link(rel='stylesheet' href='/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')
+  // iCheck
+  link(rel='stylesheet' href='/plugins/icheck-bootstrap/icheck-bootstrap.min.css')
+  // JQVMap
+  link(rel='stylesheet' href='/plugins/jqvmap/jqvmap.min.css')
+  // Theme style
+  link(rel='stylesheet' href='/stylesheets/adminlte.css')
+  // Theme style
+  link(rel='stylesheet' href='/stylesheets/style.css')
+  // overlayScrollbars
+  link(rel='stylesheet' href='/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')
+  // Daterange picker
+  link(rel='stylesheet' href='/plugins/daterangepicker/daterangepicker.css')
+  // summernote
+  link(rel='stylesheet' href='/plugins/summernote/summernote-bs4.css')
+  // Google Font: Source Sans Pro
+  link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700' rel='stylesheet')
+
+  body.login-page
+    block content
+
+      .login-box
+        .login-logo
+          a(href='../../index2.html')
+            b Admin
+            | LTE
+        // /.login-logo
+        .login-box-body
+          p.login-box-msg Sign in to start your session
+          form(action='../../index2.html' method='post')
+            .form-group.has-feedback
+              input.form-control(type='email' placeholder='Email')
+              span.glyphicon.glyphicon-envelope.form-control-feedback
+            .form-group.has-feedback
+              input.form-control(type='password' placeholder='Password')
+              span.glyphicon.glyphicon-lock.form-control-feedback
+            .row
+              .col-xs-8
+                .checkbox.icheck
+                  label
+                    .icheckbox_square-blue(aria-checked='false' aria-disabled='false' style='position: relative;')
+                      input(type='checkbox' style='position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;')
+                      ins.iCheck-helper(style='position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;')
+                    |  Remember Me
+              // /.col
+              .col-xs-4
+                button.btn.btn-primary.btn-block.btn-flat(type='submit') Sign In
+              // /.col
+          .social-auth-links.text-center
+            p - OR -
+            a.btn.btn-block.btn-social.btn-facebook.btn-flat(href='#')
+              i.fa.fa-facebook
+              |  Sign in using
+              |         Facebook
+            a.btn.btn-block.btn-social.btn-google.btn-flat(href='#')
+              i.fa.fa-google-plus
+              |  Sign in using
+              |         Google+
+          // /.social-auth-links
+          a(href='#') I forgot my password
+          br
+          a.text-center(href='register.html') Register a new membership
+        // /.login-box-body
+
